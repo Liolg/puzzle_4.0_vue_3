@@ -1,0 +1,89 @@
+:root {
+  /* COLORS */
+  --BG-COLOR: #111;
+  --FC-PRIMARY: rgb(218, 169, 79);
+  --FC-SECONDARY: rgb(0, 203, 218);
+  --FC-GG: rgb(2, 255, 200);
+}
+
+* {
+  text-align: center;
+  background-color: var(--BG-COLOR);
+  color: var(--FC-PRIMARY);
+}
+
+#divTable {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer {
+  margin-top: 0;
+  font-size: x-large;
+  font-weight: 700;
+  color: var(--FC-SECONDARY);
+}
+
+#gg {
+  color: var(--FC-GG);
+  font-size: x-large;
+  font-weight: 700;
+  height: 10vh;
+  align-content: center;
+}
+
+.noWrap {
+  text-wrap: nowrap;
+}
+
+table {
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+td {
+  font-size: 8vh;
+  width: 12vh;
+  height: 12vh;
+  border: 1px solid var(--FC-PRIMARY);
+}
+
+button {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  color: var(--FC-SECONDARY);
+  border-color: var(--FC-SECONDARY);
+  border-radius: 3px;
+  margin: inherit;
+  background-color: inherit;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+}
+
+.footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (aspect-ratio > 0.9) {
+  #tableTimerButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #divTable {
+    width: fit-content;
+  }
+}
